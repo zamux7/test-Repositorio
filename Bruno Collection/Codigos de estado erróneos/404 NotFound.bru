@@ -1,0 +1,23 @@
+meta {
+  name: 404 NotFound
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://dummyjson.com/http/404/EsteEsUnNotFound
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "username": "emilys",
+      "password": "emilyspass",
+      "expiresInMins": 30
+  }
+}
+
+settings {
+  encodeUrl: true
+}

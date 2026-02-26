@@ -1,0 +1,22 @@
+meta {
+  name: Baja usuario
+  type: http
+  seq: 3
+}
+
+delete {
+  url: https://dummyjson.com/users/2
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "email": "pruebita@api.com",
+      "phone": "+59 114-787-9970"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

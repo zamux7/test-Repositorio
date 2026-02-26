@@ -1,0 +1,79 @@
+meta {
+  name: Alta usuario
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://dummyjson.com/users/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "firstName": "Mariana",
+      "lastName": "Pérez",
+      "maidenName": "González",
+      "age": 35,
+      "gender": "Femenino",
+      "email": "mariana.perez@example.com",
+      "phone": "+54 9 11 1234-5678",
+      "username": "marianaperez35",
+      "password": "contraseñaSegura123",
+      "birthDate": "1989-06-15",
+      "image": "https://example.com/marianaperez.jpg",
+      "bloodGroup": "O+",
+      "height": 1.65,
+      "weight": 60,
+      "eyeColor": "Marrón",
+      "hair": {
+          "color": "Castaño",
+          "type": "Lacio"
+      },
+      "domain": "marianaperez.com.ar",
+      "ip": "190.45.67.89",
+      "address": {
+          "address": "Avenida Corrientes 1234",
+          "city": "Buenos Aires",
+          "coordinates": {
+              "lat": -34.6037,
+              "lng": -58.3816
+          },
+          "postalCode": "C1043",
+          "state": "Ciudad Autónoma de Buenos Aires"
+      },
+      "macAddress": "00:14:22:01:23:45",
+      "university": "Universidad de Buenos Aires",
+      "bank": {
+          "cardExpire": "12/26",
+          "cardNumber": "4502 1234 5678 9101",
+          "cardType": "Visa",
+          "currency": "ARS",
+          "iban": "AR1234567890123456789101234"
+      },
+      "company": {
+          "address": {
+              "address": "Calle Falsa 456",
+              "city": "La Plata",
+              "coordinates": {
+                  "lat": -34.9206,
+                  "lng": -57.9569
+              },
+              "postalCode": "B1900",
+              "state": "Buenos Aires"
+          },
+          "department": "Tecnología",
+          "name": "Tech Solutions SA",
+          "title": "Desarrolladora Senior"
+      },
+      "ein": "20-12345678-9",
+      "ssn": "20-34567890-1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

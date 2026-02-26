@@ -1,0 +1,20 @@
+meta {
+  name: Ordenar receta
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://dummyjson.com/recipes?sortBy=title&order=desc
+  body: none
+  auth: inherit
+}
+
+params:query {
+  sortBy: title
+  order: desc
+}
+
+settings {
+  encodeUrl: true
+}

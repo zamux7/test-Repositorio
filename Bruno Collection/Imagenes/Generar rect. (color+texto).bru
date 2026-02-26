@@ -1,0 +1,20 @@
+meta {
+  name: Generar rect. (color+texto)
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://dummyjson.com/image/400x200/282828?fontFamily=pacifico&text=I+am+a+pacifico+font
+  body: none
+  auth: inherit
+}
+
+params:query {
+  fontFamily: pacifico
+  text: I+am+a+pacifico+font
+}
+
+settings {
+  encodeUrl: true
+}

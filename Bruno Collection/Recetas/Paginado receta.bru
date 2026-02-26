@@ -1,0 +1,21 @@
+meta {
+  name: Paginado receta
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://dummyjson.com/recipes?limit=20&skip=5&select=name,image,difficulty,cuisine
+  body: none
+  auth: inherit
+}
+
+params:query {
+  limit: 20
+  skip: 5
+  select: name,image,difficulty,cuisine
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,32 @@
+meta {
+  name: GraphQL
+  type: graphql
+  seq: 6
+}
+
+post {
+  url: https://api.escuelajs.co/graphql
+  body: graphql
+  auth: inherit
+}
+
+body:graphql {
+  {
+    products{
+  		id
+      title
+      price
+  		description
+  		images
+  		category {
+  			id
+  			name
+  			image
+  		}
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,23 @@
+meta {
+  name: 503 ServiceUnavailable
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://dummyjson.com/http/503/EsteEsUnServiceUnavailable
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "username": "emilys",
+      "password": "emilyspass",
+      "expiresInMins": 30
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,23 @@
+meta {
+  name: 500 InternalServerError
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://dummyjson.com/http/999/EsteEsUnInternalServerError
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "username": "emilys",
+      "password": "emilyspass",
+      "expiresInMins": 30
+  }
+}
+
+settings {
+  encodeUrl: true
+}
